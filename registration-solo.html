@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IEM TechFusion 2025 – Solo Registration</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="logo"><a href="index.html">IEM TechFusion 2025</a></div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="webinar.html">Webinar</a></li>
+      <li><a href="registration.html" class="active">Registration</a></li>
+    </ul>
+  </nav>
+
+  <!-- SOLO REGISTRATION FORM -->
+  <section class="section-center" style="flex:1; padding:2rem;">
+    <h1>Solo Registration</h1>
+    <form id="solo-form">
+      <label>
+        Name
+        <input type="text" name="name" required>
+      </label>
+      <label>
+        Email
+        <input type="email" name="email" required>
+      </label>
+      <label>
+        Designation
+        <input type="text" name="designation" required>
+      </label>
+      <label>
+        Choose Webinar
+        <select name="webinar" required>
+          <option value="">— Select —</option>
+          <option>IoT Webinar</option>
+          <option>AI Webinar</option>
+          <option>Electronics Webinar</option>
+          <option>Automation Webinar</option>
+        </select>
+      </label>
+      <button type="submit" class="btn">Proceed to Pay</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="webinar.html">Webinar</a> |
+      <a href="registration.html">Registration</a>
+    </nav>
+    <p>© 2025 IEM TechFusion. All rights reserved by IEM Kolkata Student Wing.</p>
+  </footer>
+
+  <!-- CASHFREE SDK + CUSTOM JS -->
+  <script src="https://sdk.cashfree.com/js/v1/cashfree.js"></script>
+  <script src="registration-solo.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IEM TechFusion 2025 – Join Webinar</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Jitsi Meet External API -->
+  <script src="https://meet.jit.si/external_api.js"></script>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="logo"><a href="index.html">IEM TechFusion 2025</a></div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="webinar.html">Webinar</a></li>
+      <li><a href="registration.html">Registration</a></li>
+      <li><a class="active" href="meeting.html">Join Meeting</a></li>
+    </ul>
+  </nav>
+
+  <!-- JOIN FORM -->
+  <section id="join-section" class="section-center" style="padding:2rem;">
+    <h1>Join a Webinar</h1>
+    <form id="join-form">
+      <label>
+        Participant ID
+        <input type="text" name="participantId" placeholder="WBKO0001" required />
+      </label>
+      <label>
+        Select Webinar
+        <select name="webinar" required>
+          <option value="">— Choose —</option>
+          <option>IoT Webinar</option>
+          <option>AI Webinar</option>
+          <option>Electronics Webinar</option>
+          <option>Automation Webinar</option>
+        </select>
+      </label>
+      <button type="submit" class="btn">Join Now</button>
+    </form>
+  </section>
+
+  <!-- MEETING + ASK QUESTION (hidden until join) -->
+  <section id="meeting-container" style="display:none; flex:1; flex-direction:column;">
+    <div id="jitsi-container" style="flex:1; min-height:400px;"></div>
+    <div class="ask-question section-center">
+      <h2>Ask a Question</h2>
+      <form id="question-form">
+        <input type="text" name="question" placeholder="Type your question…" required />
+        <button type="submit" class="btn">Send Question</button>
+      </form>
+      <div id="question-status"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="webinar.html">Webinar</a> |
+      <a href="registration.html">Registration</a> |
+      <a href="meeting.html">Join Meeting</a>
+    </nav>
+    <p>© 2025 IEM TechFusion. All rights reserved by IEM Kolkata Student Wing.</p>
+  </footer>
+
+  <script src="meeting.js"></script>
+</body>
+</html>
